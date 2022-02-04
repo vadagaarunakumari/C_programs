@@ -1,0 +1,42 @@
+//VADAGA ARUNA KUMARI  awdckkd  Assignment-1
+
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+int main()
+{
+ int i,vowels = 0, consonant = 0, specialChar = 0, 
+        digit = 0;
+  
+ char ch,str[100];
+ printf("Enter a string\n");
+ gets(str);
+int  n=strlen(str);
+ 
+    for (i = 0; i < n; i++) {
+           
+        ch = str[i];
+  
+        if ( (ch >= 'a' && ch <= 'z') || 
+              (ch >= 'A' && ch <= 'Z') )
+              {
+                  ch =tolower(ch);
+  
+            if (ch == 'a' || ch == 'e' || ch == 'i' ||
+                ch == 'o' || ch == 'u')
+                vowels++;
+            else
+                consonant++;
+               }
+        else if (ch >= '0' && ch <= '9')
+            digit++;
+        else
+            specialChar++;
+    }
+    printf("Vowels: %d\n" ,vowels);
+    printf("Consonants: %d\n", consonant );
+    printf("Digits: %d\n" ,digit);
+    printf("Special Characters: %d\n",specialChar);
+return 0;
+}
+  
