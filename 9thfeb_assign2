@@ -1,0 +1,19 @@
+// VADAGA ARUNA KUMARI  awdckkd  Assignment-2
+
+#include<stdio.h>
+int main()
+{
+    int a[50],n;
+    int *p=a,i,sum=0;
+    printf("Enter array size  :");
+    scanf("%d",&n);
+    printf("Enter array elements \n");
+    for(i=0;i<n;i++)
+    scanf("%d",&a[i]);
+    for(i=0;i<n;i++)
+    sum=sum+(*(p+i));
+    printf("Sum of array elements  : %d",sum);
+    return 0;
+    
+    
+}
