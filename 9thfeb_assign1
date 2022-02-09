@@ -1,0 +1,36 @@
+//VADAGA ARUNA KUMARI  awdckkd  Assignment-1
+
+#include<stdio.h>
+int main()
+{
+    
+    int n = 4;
+    int *ptr1,*ptr2;
+    ptr1 = &n;
+    ptr2 = &n;
+ 
+    printf("Pointer ptr1 for %d "
+           "before Increment: ",n);
+    printf("%p \n", ptr1);
+ 
+    ptr1++;
+ 
+    printf("Pointer ptr1 for %d after"
+           " Increment: ",n);
+    printf("%p \n\n", ptr1);
+    printf("\nPointer addition for %d is %d\n",*ptr2,(*ptr2)+2);
+     printf("\nPointer ptr1 for %d before"
+           " Decrement: ",n);
+    printf("%p \n", ptr1);
+ 
+    ptr1--;
+ 
+    printf("Pointer ptr1 for %d after"
+           " Decrement: ",n);
+    printf("%p \n\n", ptr1);
+    
+    printf("\nPointer subtraction for %d is %d\n",*ptr1,(*ptr2)-2);
+ 
+    return 0;
+}
+ 
