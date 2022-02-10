@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include<string.h>>
+
+
+int main()
+{
+    char data[500];char str[30];
+
+    FILE * fPtr;
+
+    printf("Enter file name  :");
+    gets(str);
+    
+	fPtr = fopen("str", "w");
+
+    if(fPtr == NULL)
+    {
+
+        printf("Unable to create file.\n");
+        exit(EXIT_FAILURE);
+    }
+
+    printf("Enter contents to store in file : \n");
+    fgets(data, 500, stdin);
+    
+	fputs(data, fPtr);
+    
+	fclose(fPtr);
+
+    printf("File is created and saved  :) \n");
+
+
+    return 0;
+}
